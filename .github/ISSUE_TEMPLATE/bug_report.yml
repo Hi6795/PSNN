@@ -1,0 +1,41 @@
+name: Bug report
+description: Report a reproducible PSNN issue without private user data.
+title: "bug: "
+labels: [bug]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Explain expected behavior and the observed result.
+    validations:
+      required: true
+  - type: input
+    id: revision
+    attributes:
+      label: PSNN revision or version
+      placeholder: v0.1.0 / commit SHA
+  - type: dropdown
+    id: environment
+    attributes:
+      label: Environment
+      options:
+        - Linux host
+        - PS4 firmware 11.02
+        - PS4 firmware 13.52
+        - Other PS4 firmware
+        - Unknown
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Minimal reproduction
+      description: Steps, commands and output; remove personal account or console data.
+    validations:
+      required: true
+  - type: textarea
+    id: verification
+    attributes:
+      label: Test evidence and logs (redacted)
+      description: Include title ID and game version if hardware-tested; do not include Sony credentials or device identifiers.

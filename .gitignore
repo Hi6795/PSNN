@@ -1,0 +1,31 @@
+# Build artifacts, never commit host/Linux binaries as PS4 payloads.
+/build/
+/build-*/
+/cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+Testing/
+*.o
+*.a
+*.so
+*.dylib
+*.dll
+*.exe
+*.prx
+*.sprx
+*.elf
+*.self
+*.pkg
+*.bin
+*.log
+# Editor, OS and Python caches.
+.vscode/
+.idea/
+__pycache__/
+*.py[cod]
+.DS_Store
+Thumbs.db
+# Local PSNN runtime data and user profiles.
+*.psnn
+.env
+.env.*

@@ -1,0 +1,18 @@
+PSNN (PlayStation No Network) v0.1.0
+==================================
+STATUS: HOST-VERIFIED OFFLINE CORE + DIAGNOSTICS
+TARGET: Jailbroken PS4; separate 11.02 and 13.52 testing required
+
+BUILT: C++11 offline core, CLI, data persistence, local sessions,
+       status diagnostics (text + JSON), opt-in C game adapter ABI,
+       GoldHEN-style diagnostic-only plugin source shim.
+TESTED: Host GCC/CMake, CTest 2/2 PASS, CLI smoke PASS, host shim ABI PASS.
+
+NOT BUILT: Real PS4 PRX or PS4 homebrew executable.
+NOT DONE: PSN authentication, private online service, game hooks, LAN,
+          console hardware verification, Sony service emulation.
+
+NO hidden network activity, Sony token generation, game patches, or
+startup file logging in this milestone.
+
+Read README.md and docs/VALIDATION.md for steps and evidence.

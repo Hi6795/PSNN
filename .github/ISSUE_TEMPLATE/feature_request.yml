@@ -1,0 +1,26 @@
+name: Feature proposal
+description: Propose a testable, opt-in PSNN capability.
+title: "feat: "
+labels: [enhancement]
+body:
+  - type: textarea
+    id: outcome
+    attributes:
+      label: User-visible outcome
+      description: What must a user be able to do when this is implemented?
+    validations:
+      required: true
+  - type: textarea
+    id: interface
+    attributes:
+      label: Component or interface
+      description: Which core API, diagnostic, build component, or game adapter changes?
+    validations:
+      required: true
+  - type: textarea
+    id: validation
+    attributes:
+      label: How will you verify it?
+      description: Host tests and any separately required PS4 firmware/game checks.
+    validations:
+      required: true

@@ -1,0 +1,33 @@
+name: PS4 compatibility report
+description: Report real PS4 load/unload results (not predictions from a Linux build).
+title: "hardware: "
+body:
+  - type: input
+    id: version
+    attributes:
+      label: PSNN revision / artifact SHA-256
+    validations:
+      required: true
+  - type: input
+    id: firmware
+    attributes:
+      label: PS4 firmware version
+      placeholder: "11.02"
+    validations:
+      required: true
+  - type: input
+    id: title
+    attributes:
+      label: Game title ID and game version (if any)
+      placeholder: "CUSAxxxxx / 1.xx"
+  - type: input
+    id: loader
+    attributes:
+      label: Homebrew loader and version
+  - type: textarea
+    id: tests
+    attributes:
+      label: Exact test actions and observations
+      description: State whether actual PRX load, unload, storage or adapter behavior was tested. Remove sensitive data.
+    validations:
+      required: true
